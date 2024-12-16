@@ -4,10 +4,7 @@ services:
     env: node
     buildCommand: npm install
     startCommand: npm start
-    envVars:
-      - key: DATA_DIR
-        value: /data/token_data
     disk:
-      name: token-data
+      name: data
       mountPath: /data
       sizeGB: 1
