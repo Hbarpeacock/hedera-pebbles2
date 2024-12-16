@@ -1,5 +1,5 @@
-const axios = require('axios');
-const constants = require('../config/constants');
+import axios from 'axios';
+import constants from '../config/constants.js';
 
 async function makeRequest(url, params = {}) {
     try {
@@ -27,7 +27,7 @@ async function getTokenInfo(tokenId) {
     }
 }
 
-module.exports = {
+export default {
     makeRequest,
     getTokenInfo
 };
